@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Rizka Rahmawati 💛</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music/ilysb.mp3" type="audio/mpeg">
+</audio>
+
+<div id="loadingScreen">
+    <div class="loading-content">
+        <h1>💛</h1>
+        <h2>Untuk Rizka Rahmawati</h2>
+        <p>Sebuah pesan spesial dari Iky...</p>
+        <button id="startBtn">Buka</button>
+    </div>
+</div>
+
+<div id="petals"></div>
+
+<section class="hero">
+
+    <div class="glass">
+
+        <h1>Untuk Rizka Rahmawati 🌷</h1>
+
+        <p>
+            Iky membuat halaman kecil ini hanya untuk Riska.
+            Semoga kamu membaca sampai akhir.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="countdown-section">
+
+    <div class="glass">
+
+        <h2>💛 Sejak Awal Kita Chatan</h2>
+
+        <div id="counter"></div>
+
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h2>📸 Moment Spesial Iky</h2>
+
+    <div class="slider">
+
+        <img id="slideImage" src="images/foto1.jpg">
+
+    </div>
+
+</section>
+
+<section class="letter">
+
+<div class="envelope" id="openLetter">
+
+    <div class="envelope-front">
+        💌
+        <p>Klik untuk membuka surat</p>
+    </div>
+
+</div>
+
+<div class="letter-content" id="letterContent">
+
+<h2>Maaf Ya Riska 💛</h2>
+
+<p>
+Iky tahu beberapa waktu terakhir iky membuatmu kecewa.
+Iky tidak membuat halaman ini untuk mencari alasan,
+tetapi untuk menunjukkan bahwa iky benar-benar menyesal.
+</p>
+
+<p>
+Terima kasih sudah bertahan sejauh ini.
+Terima kasih sudah hadir dalam hidupku.
+Terima kasih sudah menjadi seseorang yang selalu iky cari.
+</p>
+
+<p>
+Iky tidak bisa mengubah masa lalu,
+tetapi iky ingin memperbaiki masa depan.
+</p>
+
+<p>
+Iky masih ingin membuat banyak kenangan bersamamu.
+</p>
+
+<p class="signature">
+Dengan tulus,<br>
+Iky ❤️
+</p>
+
+</div>
+
+</section>
+
+<section class="questions">
+
+<h2>Jawab Pertanyaan Ini Ya 😊</h2>
+
+<div class="question-card">
+
+<p>Masih sayang Iky?</p>
+
+<button onclick="showAnswer('❤️ Aku senang mendengarnya.')">
+Iya
+</button>
+
+<button onclick="showAnswer('Aku akan berusaha lebih baik lagi 💛')">
+Sedikit
+</button>
+
+</div>
+
+<div class="question-card">
+
+<p>Mau kasih Iky kesempatan?</p>
+
+<button onclick="showAnswer('Terima kasih sudah percaya lagi ❤️')">
+Mau
+</button>
+
+<button onclick="showAnswer('Aku akan tetap menunggu 😊')">
+Pikir Dulu
+</button>
+
+</div>
+
+</section>
+<!-- Tiket Konser Premium -->
+
+<section class="ticket-section">
+
+    <h2>🎫 VIP LANY EXPERIENCE</h2>
+
+    <div class="ticket">
+
+        <div class="ticket-left">
+
+            <h3>LANY</h3>
+
+            <span>VIP PASS</span>
+
+            <div class="ticket-date">
+                Forever
+            </div>
+
+        </div>
+
+        <div class="ticket-center">
+
+            <h4>TIKET PERMINTAAN MAAF</h4>
+
+            <p>
+                Tiket ini berlaku untuk:
+            </p>
+
+            <ul>
+                <li>🤗 Pelukan tanpa batas</li>
+                <li>🌷 Quality time bersama</li>
+                <li>🍜 Traktiran makanan favorit</li>
+                <li>🥤 Traktiran minuman favorit</li>
+                <li>❤️ Cinta tanpa masa berlaku</li>
+            </ul>
+
+        </div>
+
+        <div class="ticket-right">
+
+            <div class="qr-box">
+
+                <div class="fake-qr"></div>
+
+                <small>
+                    REDEEM FOR
+                    UNLIMITED LOVE ❤️
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Voucher -->
+
+<section class="voucher-section">
+
+    <h2>🎁 Hadiah Untuk Riska</h2>
+
+    <button id="giftButton">
+        Buka Kadomu
+    </button>
+
+</section>
+
+<!-- Popup Voucher -->
+
+<div class="popup" id="voucherPopup">
+
+    <div class="popup-content">
+
+        <span class="close-popup">
+            &times;
+        </span>
+
+        <h2>🎉 Voucher Traktiran 🎉</h2>
+
+        <div class="voucher-card">
+
+            <h3>Voucher Unlimited</h3>
+
+            <p>
+                Voucher ini dapat digunakan kapan saja untuk:
+            </p>
+
+            <ul>
+
+                <li>🍜 Makanan favorit Riska</li>
+
+                <li>🥤 Minuman favorit Riska</li>
+
+                <li>🍰 Dessert favorit Riska</li>
+
+                <li>🎬 Jalan-jalan bersama</li>
+
+            </ul>
+
+            <h4>
+                100% ditanggung oleh Iky ❤️
+            </h4>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Tombol Maafin -->
+
+<section class="forgive-section">
+
+    <div class="glass forgive-box">
+
+        <h2>
+            Jika setelah membaca semuanya...
+        </h2>
+
+        <p>
+            Dan jika suatu hari nanti kamu merasa
+            Iky pantas mendapatkan kesempatan Jadian Itu lagi...
+        </p>
+
+        <button id="forgiveBtn">
+
+            Riska Maafin Iky ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Pesan Akhir -->
+
+<section class="ending">
+
+    <div class="glass ending-card">
+
+        <h2>💛 Untuk Rizka Rahmawati 💛</h2>
+
+        <p>
+            Terima kasih sudah membaca semuanya sampai akhir.
+        </p>
+
+        <p>
+            Iky tahu tidak semua kesalahan bisa diperbaiki
+            dengan kata-kata.
+        </p>
+
+        <p>
+            Tapi Iky berharap tindakan dan usahanya ke depan
+            bisa membuktikan bahwa Iky sungguh menyesal.
+        </p>
+
+        <p>
+            Iky bersyukur pernah mengenalmu.
+        </p>
+
+        <p>
+            Dan Iky masih berharap bisa membuat banyak
+            kenangan indah bersamamu.
+        </p>
+
+        <div class="love-final">
+
+            ❤️ Riska & Iky ❤️
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Hujan Hati -->
+
+<div id="heartsContainer"></div>
+
+<!-- Alert Kustom -->
+
+<div id="customAlert">
+
+    <div class="alert-box">
+
+        <p id="alertText"></p>
+
+        <button id="closeAlert">
+            Oke 💛
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+        Dibuat dengan ❤️ oleh Iky
+        khusus untuk Rizka Rahmawati
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
